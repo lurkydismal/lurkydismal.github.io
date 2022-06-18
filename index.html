@@ -1,1 +1,94 @@
-Hello, World!
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.">
+    <meta name="author" content="Bartek Szopka">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet">
+
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./impress.js/css/impress-demo.css">
+    <link rel="stylesheet" href="./impress.js/css/impress-common.css">
+    
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress"
+    data-transition-duration="1000"
+    
+    data-width="1280"
+    data-height="1024"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000"
+    
+    data-autoplay="5">
+
+    <div class="step slide" data-x="0" data-y="-1500" data-autoplay="7">
+        <img src="" class="img-fluid">
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</q>
+    </div>
+
+    <div class="step slide" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cupiditate amet voluptas alias libero sequi,<br>
+            excepturi dolores ipsum, perspiciatis, tempore quod! Ducimus optio vitae voluptas,<br>
+            recusandae fugit in incidunt dicta?</p>
+    </div>
+
+    <div class="step slide" data-x="4500" data-y="2100" data-rotate="180" data-scale="6">
+        <p><span class="thoughts">Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.</span></p>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="0" data-scale="4">
+        <span class="try">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        <span class="footnote">Voluptas saepe eum fuga laboriosam reiciendis facere nemo perferendis quae nulla quas?</span>
+    </div>
+
+    <div class="step slide" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">Lorem</span> <span class="you">ipsum</span> <span class="noticed">dolor</span> <span class="its">sit</span> <span class="in">amet</span> </b>?</p>
+        <span class="footnote">Non cupiditate amet</span>
+    </div>
+
+    <!--
+        
+        So to summarize of all the possible attributes used to position presentation steps, we have:
+        
+        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+            the canvas in pixels; their default value is 0;
+        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+            are exactly the same;
+        * `data-scale` - defines the scale of step element; default value is 1
+        
+        These values are used by impress.js in CSS transformation functions, so for more information consult
+        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+        
+    -->
+</div>
+
+<footer>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./typed.js/lib/typed.min.js"></script>
+    <script src="./impress.js/js/impress.js"></script>
+
+    <script>impress().init();</script>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+[submodule "impress.js"]
+	path = impress.js
+	url = https://github.com/impress/impress.js.git
+[submodule "typed.js"]
+	path = typed.js
+	url = https://github.com/mattboldt/typed.js.git

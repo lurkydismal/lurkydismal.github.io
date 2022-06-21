@@ -59,8 +59,11 @@
     </div>
 
     <div class="step slide bg-dark px-4 py-5" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-rotate="40" data-scale="2">
-        <div class="col-lg-10 mx-auto py-5 fs-2 text-light">
-            <img src="" class="img-fluid" alt="test">
+        <div class="col mx-auto github">
+            <a href="https://github.com/lurkydismal"><img src="./image/GitHub-Mark-Light-120px-plus.png" class="img-fluid" alt="test"></a>
+        </div>
+        <div class="col mx-auto py-2">
+            <a class="fs-2 text-light" href="https://github.com/lurkydismal"><mark class="rounded"><strong>LurkyDismal</strong></mark></a>
         </div>
     </div>
 </div>
@@ -68,38 +71,7 @@
 <footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"></script>
 
-    <script>
-        function readFile( _path, _callback = console.log ) {
-            let l_xmlHttp = new XMLHttpRequest();
-
-            l_xmlHttp.onreadystatechange = function() {
-                if ( ( l_xmlHttp.readyState == XMLHttpRequest.DONE ) && ( l_xmlHttp.status == 200 ) ) {
-                    _callback( l_xmlHttp.responseText );
-                }
-            };
-
-            l_xmlHttp.open( "GET", _path, true );
-            l_xmlHttp.send( null );
-        }
-
-        const l_profileLink = "https://raw.githubusercontent.com/lurkydismal";
-        const l_branch      = "main";
-
-        var l_markdownRenderer = window.markdownit();
-
-        for ( let _repositoryDiv of document.querySelectorAll( ".repository" ) ) {
-            let l_repositoryName = _repositoryDiv.dataset[ "repository" ];
-
-            readFile(
-                l_profileLink + "\\" + l_repositoryName + "\\" + l_branch + "\\" + "README.md",
-                _callback = (
-                    ( _mdContent ) => {
-                        _repositoryDiv.innerHTML = l_markdownRenderer.render( _mdContent );
-                    }
-                )
-            );
-        }
-    </script>
+    <script src="./js/get_repos.js"></script>
 
     <script src="./bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./typed.js/lib/typed.min.js"></script>

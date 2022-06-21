@@ -50,9 +50,6 @@ body {
     display: block;
 }
 
-.repository {
-    padding-top: 20%;
-}
 
 .slide {
     transition: opacity 1s;
@@ -79,6 +76,14 @@ body {
     -ms-box-sizing:     border-box;
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
+}
+
+.repository {
+    padding-top: 20%;
+}
+
+.github {
+    padding-top: 20%;
 }
 
 /* .typed-cursor {

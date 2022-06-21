@@ -50,6 +50,10 @@ body {
     display: block;
 }
 
+.repository {
+    padding-top: 20vh;
+}
+
 .slide {
     transition: opacity 1s;
     text-align: center;

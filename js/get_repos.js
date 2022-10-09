@@ -11,20 +11,21 @@ function readFile( _path, _callback = console.log ) {
     l_xmlHttp.send( null );
 }
 
-const l_profileLink = "https://raw.githubusercontent.com/lurkydismal";
-const l_branch      = "main";
+const g_repositoryOwnerName = "lurkydismal";
+const g_branchName          = "main";
+const g_profileLink         = `https://raw.githubusercontent.com/${ g_repositoryOwnerName }`;
 
-var l_markdownRenderer = window.markdownit();
+var g_markdownRenderer = window.markdownit();
 
 ( () => {
     for ( let _repositoryDiv of document.querySelectorAll( ".repository" ) ) {
         let l_repositoryName = _repositoryDiv.dataset[ "repository" ];
 
         readFile(
-            l_profileLink + "\\" + l_repositoryName + "\\" + l_branch + "\\" + "README.md",
+            g_profileLink + "\\" + l_repositoryName + "\\" + g_branchName + "\\" + "README.md",
             _callback = (
                 ( _mdContent ) => {
-                    _repositoryDiv.innerHTML = l_markdownRenderer.render( _mdContent );
+                    _repositoryDiv.innerHTML = g_markdownRenderer.render( _mdContent );
                 }
             )
         );

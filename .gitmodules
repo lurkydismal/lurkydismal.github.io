@@ -4,6 +4,3 @@
 [submodule "typed.js"]
 	path = typed.js
 	url = https://github.com/mattboldt/typed.js.git
-[submodule "markdown-it"]
-	path = markdown-it
-	url = https://github.com/markdown-it/markdown-it.git

@@ -25,7 +25,7 @@ var g_markdownRenderer = window.markdownit();
             g_profileLink + "\\" + l_repositoryName + "\\" + g_branchName + "\\" + "README.md",
             _callback = (
                 ( _mdContent ) => {
-                    _repositoryDiv.innerHTML = g_markdownRenderer.render( _mdContent );
+                    _repositoryDiv.innerHTML = g_markdownRenderer.render( _mdContent.split("## Table of Contents").at(0) );
                 }
             )
         );

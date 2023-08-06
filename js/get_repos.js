@@ -21,7 +21,7 @@ var g_markdownRenderer = window.markdownit();
 
 ( () => {
     for ( let _repositoryDiv of document.querySelectorAll( ".repository" ) ) {
-        let l_repositoryName = _repositoryDiv.dataset[ "repository" ];
+        let l_repositoryName = _repositoryDiv.dataset.repository;
 
         readFile( g_profileLink + "\\" + l_repositoryName + "\\" +
                       g_branchName + "\\" +

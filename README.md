@@ -1,5 +1,7 @@
 # lurkydismal.github.io
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/430b8f6c6d644ca18c2d86fb3defe6e1)](https://app.codacy.com/gh/lurkydismal/lurkydismal.github.io/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
 > Some of my Github orojects brief description.
 > Live [_here_](https://lurkydismal.github.io).
 

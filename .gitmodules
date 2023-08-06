@@ -4,3 +4,7 @@
 [submodule "typed.js"]
 	path = typed.js
 	url = https://github.com/mattboldt/typed.js.git
+[submodule "bootstrap"]
+	path = bootstrap
+	url = https://github.com/twbs/bootstrap.git
+	branch = main

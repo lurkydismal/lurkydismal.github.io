@@ -8,3 +8,7 @@
 	path = bootstrap
 	url = https://github.com/twbs/bootstrap.git
 	branch = main
+[submodule "markdown_it"]
+	path = markdown_it
+	url = https://github.com/markdown-it/markdown-it.git
+	branch = master

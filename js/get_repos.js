@@ -17,7 +17,27 @@ const g_branchName = "main";
 const g_profileLink =
     `https://raw.githubusercontent.com/${g_repositoryOwnerName}`;
 
-var g_markdownRenderer = window.markdownit();
+var g_markdownRenderer = window.markdownit().set( {
+    breaks : true,
+    linkify : true,
+    typographer : true,
+    highlight : function( _string, _language ) {
+        if ( _language && hljs.getLanguage( _language ) ) {
+            try {
+                return hljs
+                    .highlight(
+                        _string,
+                        { language : _language, ignoreIllegals : true } )
+                    .value;
+
+            } catch ( _exception ) {
+                console.log( _exception );
+            }
+        }
+
+        return ''; // use external default escaping
+    }
+} );
 
 ( () => {
     for ( let _repositoryDiv of document.querySelectorAll( ".repository" ) ) {

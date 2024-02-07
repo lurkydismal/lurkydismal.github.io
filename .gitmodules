@@ -11,4 +11,4 @@
 [submodule "markdown_it"]
 	path = markdown_it
 	url = https://github.com/markdown-it/markdown-it.git
-	branch = master
+	branch = 6cbb5b2

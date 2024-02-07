@@ -5,6 +5,14 @@ updates:
     schedule:
       interval: "weekly"
   - package-ecosystem: "gitsubmodule"
-    directory: "/"
+    directory: "/bootstrap"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "gitsubmodule"
+    directory: "/impress.js"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "gitsubmodule"
+    directory: "/typed.js"
     schedule:
       interval: "weekly"
